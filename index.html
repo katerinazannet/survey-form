@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Survey Form</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="surveyForm.css" />
+    .
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Let us know how we can improve</p>
+
+    <form id="survey-form">
+      <div class="form-group row">
+        <label id="name-label" for="name" class="col-sm-2 col-form-label"
+          >* Name:</label
+        >
+
+        <div class="col-sm-10">
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your name"
+            autofocus
+            required
+          />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label id="email-label" for="email" class="col-sm-2 col-form-label"
+          >* Email:</label
+        >
+
+        <div class="col-sm-10">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label id="number-label" for="number" class="col-sm-2 col-form-label"
+          >* Age:</label
+        >
+
+        <div class="col-sm-10">
+          <input
+            type="number"
+            id="number"
+            min="5"
+            max="100"
+            placeholder="Age"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">
+          Which option best describes your current role?</label
+        >
+        <div class="col-sm-10">
+          <select id="dropdown" class="dropdown">
+            <option disabled value>Select an option</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="prefer">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">
+          * How likely is that you would recommend us to a friend?</label
+        >
+        <div class="col-sm-10">
+          <input type="radio" name="radio-buttons" value="1" /> Definitely
+          <br />
+          <input type="radio" name="radio-buttons" value="2" /> Maybe <br />
+          <input type="radio" name="radio-buttons" value="3" /> Not sure <br />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> What do you like most:</label>
+
+        <div class="col-sm-10">
+          <select id="dropdown" class="dropdown">
+            <option value>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open">Open Source</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">
+          Things that should be improved in the future <br />(Check all that
+          apply):</label
+        >
+
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="1" />
+            <label class="form-check-label">Front-end Projects</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="2" />
+            <label class="form-check-label">Back-end Projects</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="3" />
+            <label class="form-check-label"> Data Visualization</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="4" />
+            <label class="form-check-label">Challenges</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="5" />
+            <label class="form-check-label">Open Source Community</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="6" />
+            <label class="form-check-label">Gitter help rooms</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="7" />
+            <label class="form-check-label">Videos</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="8" />
+            <label class="form-check-label">Forum</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="comments"
+          >Any Comments or Suggestions?</label
+        >
+        <div class="answers">
+          <textarea
+            class="form-control col-sm-10"
+            id="comments"
+            name="comment"
+            placeholder="Enter your comment here.."
+            rows="3"
+          ></textarea>
+        </div>
+      </div>
+      <button
+        class="btn btn-outline-dark btn-sm col-sm-4"
+        id="submit"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+
+    
+  </body>
+</html>
